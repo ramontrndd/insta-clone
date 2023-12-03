@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  min-width: 100vh;
+  background-color: white;
+}
+.instagram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 70%;
+  height: 100vh;
+}
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.instagram-phone img {
+  height: 50rem;
+}
+.instagram-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  margin-top: 10px;
+}
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+.instagram-logo {
+  height: 3rem;
+}
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-photo img {
+  border-radius: 50%;
+}
+.instagram-login {
+  background-color: #0085f6;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 1rem;
+  color: white;
+}
+.instagram-loudot {
+  color: #0085f6;
+  margin-top: 1rem;
+}
+.not-account {
+  color: rgb(160, 160, 158);
+}
+.link-blue {
+  color: #0085f6;
+}
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1) {
+  background-image: url('/assets/img/googleplay-button.png');
+}
+.app-download:nth-child(2) {
+  background-image: url('/assets/img/apple-button.png');
+}
+.get-app{
+    font-weight: bold;
+}
+
+@media (max-width: 1024px){
+    .instagram-wrapper {
+        width: 90%;
+
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: white;
+    }
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone {
+        display: none;
+    }
+    .group { 
+        border: 1 pix solid;
+        
+    }
+    .download {
+        padding: 0rem;
+    }
+    .get-app { 
+        margin-bottom: 10px;
+    }
+    
+}
